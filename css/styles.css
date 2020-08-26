@@ -1,0 +1,480 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(#487cb8, rgb(248, 234, 242));
+}
+
+.ground {
+   width: 100%;
+   height: 25%;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgb(202, 166, 75);
+   position: absolute;
+   z-index: 0;
+}
+
+.details-ground, 
+.details-ground::before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 80px solid transparent;
+    border-right: 140px solid transparent;
+    border-bottom: 80px solid rgb(202, 166, 75);
+    top: -78px;
+}
+
+.details-ground::before {
+    content: "";
+    top: 40px;
+    left: 96px;
+    border-right: 100px solid transparent;
+    border-bottom: 40px solid rgb(202, 166, 75);
+}
+
+.shadows-ground {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 20px solid rgb(0, 0, 0);
+    top: 79px;
+    left: -80px;
+    opacity: .6;
+}
+
+.shadows-ground.one {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 134px solid transparent;
+    border-top: 10px solid rgb(0, 0, 0);
+    top: 79px;
+    left: 120px;
+    opacity: .6;
+}
+
+.container {
+    width: 1345px;
+    height: 500px;
+    padding-top: 0px;
+    position: absolute;
+    background-color: transparent;
+    top: 60px;
+}
+
+.R2D2-head {
+    width: 160px;
+    height: 100px;
+    position: absolute;
+    top: 170px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 7rem 7rem 0 0;
+    left: 570px;
+    border: transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.details-head, 
+.details-head::before {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(3, 3, 163) ;
+    left: 38px;
+    top: -3px;
+    border-radius: 0 0 0 100%;
+}
+
+.details-head::before {
+    content: "";
+    top: 0px;
+    left: 46px;
+    border-radius: 0 0 100% 0;
+}
+
+.base-eye {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    background-color: rgb(2, 2, 122);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.eye {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.reflex-eye, 
+.reflex-eye::before {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(133, 1, 1, 0.39);
+    border-radius: 50%;
+}
+
+.reflex-eye::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.445);
+    width: 10px;
+    height: 10px;
+    top: -3px;
+    left: 9px;
+}
+
+.details-face {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-color: rgb(2, 2, 122);
+    top: 60px;
+    left: -50px;
+}
+
+.details-face.one {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(2, 2, 122);
+    top: 60px;
+    left: -25px;
+}
+
+.details-face.two {
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(2, 2, 122);
+    top: 60px;
+    left: 0px;
+}
+
+.details-face.three {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(2, 2, 122);
+    top: 60px;
+    left: 15px;
+}
+
+.details-face.four {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(2, 2, 122);
+    top: 60px;
+    left: 90px;
+}
+
+.details-face.circle {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background-color: rgb(168, 168, 168);
+    border-radius: 50%;
+    border: solid 1px rgb(2, 2, 122);
+    top: 48px;
+    left: 55px;
+}
+
+.sensor {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: rgb(129, 0, 0);
+    border-radius: 50%;
+    top: 2px;
+    left: 8px;
+}
+
+.R2D2-body {
+    width: 160px;
+    height: 180px;
+    position: absolute;
+    top: 270px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 0 0 2rem 2rem;
+    left: 570px;
+    border-top: solid 5px rgb(2, 2, 122);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.box-body {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 30px;
+    background-color: transparent;
+    border-radius: 5%;
+    overflow: hidden;
+    border: solid 1px black;
+}
+
+.lines-body {
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    background-color: rgb(2, 2, 122);
+    border-radius: 10%;
+}
+
+.lines-body.one {
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    background-color: rgb(2, 2, 122);
+    border-radius: 10%;
+}
+
+.lines-body.two {
+    width: 60px;
+    height: 10px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    background-color: rgb(2, 2, 122);
+    border-radius: 10%;
+}
+
+.circles-body {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 3px;
+    left: 148px;
+    background-color: rgba(133, 1, 1);
+    border-radius: 50%;
+}
+
+.circles-body.one {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 12px;
+    left: 148px;
+    background-color: rgb(1, 126, 32);
+    border-radius: 50%;
+}
+
+.box-body.one {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 55px;
+    left: 62px;
+    background-color: rgb(2, 2, 122);
+    border-radius: 5%;
+}
+
+.details-box, 
+.details-box::before {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 30%;
+    border: solid 1px rgb(192, 192, 192);
+}
+
+.details-box::before {
+    content: "";
+    top: 38px;
+    left: -1px;
+}
+
+.lines-details-box {
+    width: 34px;
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    background-color: rgb(168, 168, 168);
+    opacity: .4;
+}
+
+.lines-details-box.one {
+    width: 34px;
+    height: 1px;
+    position: absolute;
+    top: 20px;
+    background-color: rgb(168, 168, 168);
+    opacity: .4;
+}
+
+.lines-details-box.two {
+    width: 34px;
+    height: 1px;
+    position: absolute;
+    top: 48px;
+    background-color: rgb(168, 168, 168);
+    opacity: .4;
+}
+
+.lines-details-box.three {
+    width: 34px;
+    height: 1px;
+    position: absolute;
+    top: 58px;
+    background-color: rgb(168, 168, 168);
+    opacity: .4;
+}
+
+.more-details-box, 
+.more-details-box::before {
+    width: 25px;
+    height: 50px;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    background-color: rgb(2, 2, 122);
+    border-radius: 25%;
+}
+
+.more-details-box::before {
+    content: "";
+    top: 0px;
+    left: 90px;
+
+}
+
+.R2D2-shoulders, 
+.R2D2-shoulders::before {
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    top: 285px;
+    left: 568px;
+    background-color: black;
+    border-radius: 0 50px 50px 0;
+    z-index: 1;
+}
+
+.R2D2-shoulders::before {
+    content: "";
+    top: auto;
+    left: 153px;
+    border-radius: 50px 0 0 50px;
+}
+
+.arms {
+    width: 16px;
+    height: 176px;
+    position: absolute;
+    top: -6px;
+    left: -16px;
+    background-color: rgb(218, 218, 218);
+    border-left: solid 1px rgb(143, 142, 142);
+}
+
+.arms.one {
+    width: 16px;
+    height: 176px;
+    position: absolute;
+    top: -6px;
+    left: 163px;
+    background-color: rgb(218, 218, 218);
+    border-left: transparent;
+    border-right: solid 1px rgb(143, 142, 142);
+}
+
+.bar-arms {
+    width: 8px;
+    height: 175px;
+    position: absolute;
+    top: -5px;
+    left: -24px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 20px 0 0 0;
+    border-right: solid 1px rgb(143, 142, 142);
+}
+
+.bar-arms.one {
+    width: 8px;
+    height: 175px;
+    position: absolute;
+    top: -5px;
+    left: 179px;
+    background-color: rgb(212, 211, 211);
+    border-radius: 0 20px 0 0;
+    border-right: transparent;
+    border-left: solid 1px rgb(143, 142, 142) ;
+}
+
+.feet,
+.feet::before {
+    width: 25px;
+    height: 0px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 30px solid rgb(218, 218, 218);
+    position: absolute;
+    top: 170px;
+    left: -34px;
+}
+
+.feet::before {
+    content: "";
+    top: auto;
+    left: 177px;
+}
+
+.shadow {
+    width: 240px;
+    height: 40px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    top: 465px;
+    left: 531px;
+    z-index: 1;
+    opacity: .8;
+ }
+
+.animated-background {
+    position: absolute;
+    z-index: 1;
+    place-content: center;
+} 
+
+.planet,
+.planet::before {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(#f2f551, rgb(241, 233, 116) ) ;
+    position: absolute;
+    top: 80px;
+    left: 800px;
+    border-radius: 50%;
+}
+
+.planet::before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    top: 180px;
+    left: 150px;
+
+}
